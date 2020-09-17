@@ -20,18 +20,18 @@ void setup()
 void loop()
 {
   digitalWrite(LED1, HIGH);  // LED 1 blinkt auf
-  delay(500);
+  delay(200);
   digitalWrite(LED1, LOW); 
 
   digitalWrite(LED2, HIGH); // LED 2 blinkt auf
-  delay(500);
+  delay(200);
   digitalWrite(LED2, LOW);
 
   digitalWrite(LED3, HIGH); // LED 3 blinkt auf
-  delay(500);
+  delay(200);
   digitalWrite(LED3, LOW);
 
   digitalWrite(LED4, HIGH); // LED 4 blinkt auf
-  delay(500);
+  delay(200);
   digitalWrite(LED4, LOW);
 }
