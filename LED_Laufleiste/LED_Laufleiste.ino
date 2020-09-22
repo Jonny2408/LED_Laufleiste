@@ -2,36 +2,27 @@
     Version 1.0 17.9.2020
     Programmierer J.Schmidt
 
-    Hardware: Arduion; LED Laufleiste an, LEDs von Pin 8-11
+    Hardware: Arduion; LED Laufleiste an, LEDs von Pin 2-9
 */
 
-#define LED1 8   // LED 1
-#define LED2 9   // LED 2
-#define LED3 10  // LED 3
-#define LED4 11  // LED 4
+byte led[9]={2,3,4,5,6,7,8,9};
+
 void setup()
 {
-  pinMode(LED1, OUTPUT);
-  pinMode(LED2, OUTPUT);
-  pinMode(LED3, OUTPUT);
-  pinMode(LED4, OUTPUT);
+  for(byte i=0;i<8;i++)
+  {
+    pinMode(led[i],OUTPUT);
+  }
 }
 
 void loop()
 {
-  digitalWrite(LED1, HIGH);  // LED 1 blinkt auf
-  delay(200);
-  digitalWrite(LED1, LOW); 
-
-  digitalWrite(LED2, HIGH); // LED 2 blinkt auf
-  delay(200);
-  digitalWrite(LED2, LOW);
-
-  digitalWrite(LED3, HIGH); // LED 3 blinkt auf
-  delay(200);
-  digitalWrite(LED3, LOW);
-
-  digitalWrite(LED4, HIGH); // LED 4 blinkt auf
-  delay(200);
-  digitalWrite(LED4, LOW);
+  for(byte i=0;i<8
+  ;i++)
+  {
+    digitalWrite(led[i],HIGH);
+    delay(500);
+    digitalWrite(led[i],LOW);
+  }
+  
 }
